@@ -13,5 +13,8 @@ spring:
 mybatis-plus:
   global-config:
     banner: false
+    db-config:
+      table-prefix: mp_
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
